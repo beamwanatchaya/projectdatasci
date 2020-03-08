@@ -1,56 +1,61 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
+   
+   
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>DataScience</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+        <style>
+                .bg{
+                background-image: url("https://image.freepik.com/free-vector/brush-strokes-background_53876-89327.jpg");
+                }
+        </style>
+    
         
 </head>
-
-
 <body>
-
-
+   <div class="bg" >
     <div class="container">
-        <form method="POST" action="" class="shadow-lg p-3 mb-5 bg-white rounded">
+        <br><br><br><form method="POST" action="" class="shadow-lg p-3 mb-5 bg-white rounded">
             {% csrf_token %}
             <div class="form-group">
-                <h2>test text</h2>
+                <center><h2>test text</h2></center>
                 <textarea class="form-control" rows="3" name="chat" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary mb-2">test</button>
-            <h1>{{ label }}</h1>
+            <center><button type="submit" class="btn btn-outline-primary btn-lg mb-2">Submit</button></center>
+            <center><h1>{{ label }}</h1>
         </form>
-    </div>
-
+    
+</div>
     <div class="row">
-        <div class="card border-primary mb-3" style="max-width: 18rem;">
+         &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;&nbsp;    &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp;  <div class="card border-primary mb-3" style="max-width: 18rem;">
             <div class="card-header">ตัวอย่างบทความ</div>
             <div class="card-body text-primary">
-            <h5 class="card-title">rec.sport.baseball</h5>
+            <h5 class="card-title">Rec.sport.baseball</h5>
             <p class="card-text">Baseball is a team sport. The player who threw that pitch or the pitcher ( Pitcher ) to pitch a baseball , which is about the size of the fist. There are about 2 inches in diameter, the players on offense, which called the strike or batteries ( the batter )
             </p>
             </div>
         </div>
         
-        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+        &nbsp;  &nbsp;  &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp; <div class="card border-secondary mb-3" style="max-width: 18rem;">
             <div class="card-header">ตัวอย่างบทความ</div>
             <div class="card-body text-secondary">
-            <h5 class="card-title">sci.med</h5>
+            <h5 class="card-title">Sci.med</h5>
             <p class="card-text">Social Science & Medicine provides an international and interdisciplinary forum for the dissemination of social science research on health. We publish original research articles (both empirical and theoretical), reviews, position papers and commentaries on health issues, to inform current research...
             </p>
             </div>
         </div>
  
-        <div class="card border-success mb-3" style="max-width: 18rem;">
+        &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;<div class="card border-success mb-3" style="max-width: 18rem;">
             <div class="card-header">ตัวอย่างบทความ</div>
             <div class="card-body text-success">
-            <h5 class="card-title">talk.politics.misc</h5>
+            <h5 class="card-title">Talk.politics.misc</h5>
             <p class="card-text">
                 The Reserve Officers Association of the United States has alerted the Defense Base
             Realignment and Closure Commission that the services failed to give
@@ -59,6 +64,21 @@
             </p>
             </div>
         </div>
+        <br>
+        &nbsp; &nbsp;  &nbsp;&nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp;  &nbsp;<div class="card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">ตัวอย่างบทความ</div>
+            <div class="card-body text-danger">
+              <h5 class="card-title">Rec.sport.baseball</h5>
+              <p class="card-text">I have a 1990 Mitsubishi eclipse turbo awd, am 23 years old and have no
+                tickets that went on my record.  I live in Illinois just outside of Chicago
+                and pay $1560 a year with full coverage at State Farm.  I did get a small
+                discount because of my alarm system($30 a year).  I only live 15 miles from
+                Chicago but if I actually lived in the city the price would be about $2000
+                a year.</p>
+            </div>
+          </div>
+       
+
 
 
 
@@ -66,7 +86,7 @@
 
 
     </div>
-
+</div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
